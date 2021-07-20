@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backpurple">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/stats_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:minWidth="291dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+
+            android:id="@+id/stats_ti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:backgroundTintMode="add"
+
+            android:fontFamily="@font/roboto_slab"
+            android:inputType="none"
+            android:paddingTop="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/whiteplat" />
+
+    <ImageView
+        android:id="@+id/stat_1day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_2days"
+        app:layout_constraintEnd_toStartOf="@+id/stat_today"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stat_2days"
+        app:layout_constraintTop_toTopOf="@+id/stat_2days"
+        app:srcCompat="@drawable/progresslight2" />
+
+    <ImageView
+        android:id="@+id/stat_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_1day"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stat_1day"
+        app:layout_constraintTop_toTopOf="@+id/stat_1day"
+        app:srcCompat="@drawable/progresslight2" />
+
+    <ImageView
+        android:id="@+id/stat_6days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/stat_5days"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.628"
+        app:srcCompat="@drawable/progresslight2" />
+
+    <ImageView
+        android:id="@+id/stat_5days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_6days"
+        app:layout_constraintEnd_toStartOf="@+id/stat_4days"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stat_6days"
+        app:layout_constraintTop_toTopOf="@+id/stat_6days"
+        app:srcCompat="@drawable/progresslight2" />
+
+    <ImageView
+        android:id="@+id/stat_4days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_5days"
+        app:layout_constraintEnd_toStartOf="@+id/stat_3days"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stat_5days"
+        app:layout_constraintTop_toTopOf="@+id/stat_5days"
+        app:srcCompat="@drawable/progresslight2" />
+
+    <ImageView
+        android:id="@+id/stat_3days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_4days"
+        app:layout_constraintEnd_toStartOf="@+id/stat_2days"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stat_4days"
+        app:layout_constraintTop_toTopOf="@+id/stat_4days"
+        app:srcCompat="@drawable/progresslight2" />
+
+    <ImageView
+        android:id="@+id/stat_2days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_3days"
+        app:layout_constraintEnd_toStartOf="@+id/stat_1day"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/stat_3days"
+        app:layout_constraintTop_toTopOf="@+id/stat_3days"
+        app:srcCompat="@drawable/progresslight2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab"
+        android:text="За неделю"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stats_til"
+        app:srcCompat="@drawable/progressround" />
+
+    <ImageView
+        android:id="@+id/stat_vasya_img"
+        android:layout_width="178dp"
+        android:layout_height="169dp"
+        android:background="@drawable/vas_hap_hand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/textdays6"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="@+id/stat_6days"
+        app:layout_constraintStart_toStartOf="@+id/stat_6days"
+        app:layout_constraintTop_toBottomOf="@+id/stat_6days" />
+
+    <TextView
+        android:id="@+id/textdays5"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="@+id/stat_5days"
+        app:layout_constraintStart_toStartOf="@+id/stat_5days"
+        app:layout_constraintTop_toBottomOf="@+id/stat_5days" />
+
+    <TextView
+        android:id="@+id/textdays4"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="@+id/stat_4days"
+        app:layout_constraintStart_toStartOf="@+id/stat_4days"
+        app:layout_constraintTop_toBottomOf="@+id/stat_4days" />
+
+    <TextView
+        android:id="@+id/textdays3"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="@+id/stat_3days"
+        app:layout_constraintStart_toStartOf="@+id/stat_3days"
+        app:layout_constraintTop_toBottomOf="@+id/stat_3days" />
+
+    <TextView
+        android:id="@+id/textdays2"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="@+id/stat_2days"
+        app:layout_constraintStart_toStartOf="@+id/stat_2days"
+        app:layout_constraintTop_toBottomOf="@+id/stat_2days" />
+
+    <TextView
+        android:id="@+id/textday1"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="@+id/stat_1day"
+        app:layout_constraintStart_toStartOf="@+id/stat_1day"
+        app:layout_constraintTop_toBottomOf="@+id/stat_1day" />
+
+    <TextView
+        android:id="@+id/texttoday"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="@+id/stat_today"
+        app:layout_constraintStart_toStartOf="@+id/stat_today"
+        app:layout_constraintTop_toBottomOf="@+id/stat_today" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="115dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/stat_percent"
+        app:layout_constraintStart_toStartOf="@+id/stat_percent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.486"
+        app:srcCompat="@drawable/percentplank" />
+
+    <TextView
+        android:id="@+id/stat_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_slab"
+        android:text="100%"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="185dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.685"
+        tools:progress="60" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="16dp"
+        android:layout_height="117dp"
+
+        android:progress="100"
+        android:rotation="-90"
+        android:scaleX="7.2"
+        android:scaleY="3.6"
+        android:theme="@style/MyProgressBarTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_today"
+        app:layout_constraintEnd_toEndOf="@+id/stat_today"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/stat_today"
+        app:layout_constraintTop_toTopOf="@+id/stat_today"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="16dp"
+        android:layout_height="117dp"
+
+        android:progress="100"
+        android:rotation="-90"
+        android:scaleX="7.2"
+        android:scaleY="3.6"
+        android:theme="@style/MyProgressBarTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_1day"
+        app:layout_constraintEnd_toEndOf="@+id/stat_1day"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/stat_1day"
+        app:layout_constraintTop_toTopOf="@+id/stat_1day"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="16dp"
+        android:layout_height="117dp"
+
+        android:layout_marginTop="44dp"
+        android:progress="100"
+        android:rotation="-90"
+        android:scaleX="7.2"
+        android:scaleY="3.6"
+        android:theme="@style/MyProgressBarTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_2days"
+        app:layout_constraintEnd_toEndOf="@+id/stat_2days"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/stat_2days"
+        app:layout_constraintTop_toTopOf="@+id/stat_2days"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="16dp"
+        android:layout_height="117dp"
+
+        android:progress="100"
+        android:rotation="-90"
+        android:scaleX="7.2"
+        android:scaleY="3.6"
+        android:theme="@style/MyProgressBarTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_3days"
+        app:layout_constraintEnd_toEndOf="@+id/stat_3days"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/stat_3days"
+        app:layout_constraintTop_toTopOf="@+id/stat_3days"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="16dp"
+        android:layout_height="117dp"
+
+        android:progress="100"
+        android:rotation="-90"
+        android:scaleX="7.2"
+        android:scaleY="3.6"
+        android:theme="@style/MyProgressBarTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_4days"
+        app:layout_constraintEnd_toEndOf="@+id/stat_4days"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/stat_4days"
+        app:layout_constraintTop_toTopOf="@+id/stat_4days"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="16dp"
+        android:layout_height="117dp"
+
+        android:layout_marginEnd="217dp"
+        android:progress="100"
+        android:rotation="-90"
+        android:scaleX="7.2"
+        android:scaleY="3.6"
+        android:theme="@style/MyProgressBarTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_5days"
+        app:layout_constraintEnd_toEndOf="@+id/stat_5days"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/stat_5days"
+        app:layout_constraintTop_toTopOf="@+id/stat_5days"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar6"
+        style="@style/MyProgressBarTwo"
+        android:layout_width="16dp"
+        android:layout_height="117dp"
+
+        android:progress="100"
+        android:rotation="-90"
+        android:scaleX="7.2"
+        android:scaleY="3.6"
+        android:theme="@style/MyProgressBarTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/stat_6days"
+        app:layout_constraintEnd_toEndOf="@+id/stat_6days"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="@+id/stat_6days"
+        app:layout_constraintTop_toTopOf="@+id/stat_6days"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="157dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stat_vasya_img"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/message_plank" />
+
+    <TextView
+        android:id="@+id/vasya_stat"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/roboto_slab"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.289" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

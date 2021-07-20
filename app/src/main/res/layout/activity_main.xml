@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <!--
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is your final stop where you will get information regarding material design specifications and the related widgets being used with material design themes. I am making a material design series and post videos one by one. Material design enhances your application user interface designing skills by implementing all new materialistic features introduced in Android Lollipop 5.0.  What You'll Learn In this series of videos: 1. Getting Started with Android Material Design Components 2. Toolbar with Popup Menu, Contextual Menu   3. Basic Components: FAB, SnackBar and CoordinatorLayout   4. Android Animations   5. Floating Labels, AppBarLayout and Collapsing Toolbar   6. RecyclerView, CardView  7. Navigation Drawer and NavigationView and many more This is your final stop where you will get information regarding material design specifications and the related widgets being used with material design themes. I am making a material design series and post videos one by one. Material design enhances your application user interface designing skills by implementing all new materialistic features introduced in Android Lollipop 5.0.  What You'll Learn In this series of videos: 1. Getting Started with Android Material Design Components 2. Toolbar with Popup Menu, Contextual Menu   3. Basic Components: FAB, SnackBar and CoordinatorLayout   4. Android Animations   5. Floating Labels, AppBarLayout and Collapsing Toolbar   6. RecyclerView, CardView  7. Navigation Drawer and NavigationView and many moreThis is your final stop where you will get information regarding material design specifications and the related widgets being used with material design themes. I am making a material design series and post videos one by one. Material design enhances your application user interface designing skills by implementing all new materialistic features introduced in Android Lollipop 5.0.  What You'll Learn In this series of videos: 1. Getting Started with Android Material Design Components 2. Toolbar with Popup Menu, Contextual Menu   3. Basic Components: FAB, SnackBar and CoordinatorLayout   4. Android Animations   5. Floating Labels, AppBarLayout and Collapsing Toolbar   6. RecyclerView, CardView  7. Navigation Drawer and NavigationView and many more This is your final stop where you will get information regarding material design specifications and the related widgets being used with material design themes. I am making a material design series and post videos one by one. Material design enhances your application user interface designing skills by implementing all new materialistic features introduced in Android Lollipop 5.0.  What You'll Learn In this series of videos: 1. Getting Started with Android Material Design Components 2. Toolbar with Popup Menu, Contextual Menu   3. Basic Components: FAB, SnackBar and CoordinatorLayout   4. Android Animations   5. Floating Labels, AppBarLayout and Collapsing Toolbar   6. RecyclerView, CardView  7. Navigation Drawer and NavigationView and many more" />
+    </androidx.core.widget.NestedScrollView>
+-->
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="#FFFFFF"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemRippleColor="#FFFFFF"
+        app:itemTextColor="#1B5E20"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

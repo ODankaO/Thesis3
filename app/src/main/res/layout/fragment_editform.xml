@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFormFragment">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/desc_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="291dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:hint=" Комментарий"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_til">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/desc_ti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="291dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:hint="Название"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_ti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/finish_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="233dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:hint="Дата завершения"
+            app:layout_constraintStart_toStartOf="@+id/start_til"
+            app:layout_constraintTop_toBottomOf="@+id/start_til">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/finish_ti"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/start_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="291dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:hint="Дата начала"
+            app:layout_constraintEnd_toEndOf="@+id/desc_til"
+            app:layout_constraintStart_toStartOf="@+id/desc_til"
+            app:layout_constraintTop_toBottomOf="@+id/desc_til">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/start_ti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Чт"
+            android:textColor="#33691E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/thu_act"
+            app:layout_constraintStart_toStartOf="@+id/thu_act" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Пт"
+            android:textColor="#33691E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/fri_act"
+            app:layout_constraintStart_toStartOf="@+id/fri_act" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Сб"
+            android:textColor="#004D40"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/sat_act"
+            app:layout_constraintStart_toStartOf="@+id/sat_act" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Ср"
+            android:textColor="#33691E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/wed_act"
+            app:layout_constraintStart_toStartOf="@+id/wed_act" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Вт"
+            android:textColor="#33691E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/tue_act"
+            app:layout_constraintStart_toStartOf="@+id/tue_act" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="347dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Добавьте задачу на пути к Вашей цели"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="349dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/roboto_slab"
+            android:text='"Начните с малого, постепенно достигая высот"'
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <CheckBox
+            android:id="@+id/sun_act"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:button="@drawable/im_checkbox"
+            android:includeFontPadding="false"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            android:shadowColor="#A5D6A7"
+            app:layout_constraintEnd_toStartOf="@+id/mon_act"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/finish_til" />
+
+        <CheckBox
+            android:id="@+id/mon_act"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:button="@drawable/im_checkbox"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/sun_act"
+            app:layout_constraintEnd_toStartOf="@+id/tue_act"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/sun_act"
+            app:layout_constraintTop_toTopOf="@+id/sun_act"
+            app:layout_constraintVertical_bias="0.33999997" />
+
+        <CheckBox
+            android:id="@+id/wed_act"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:button="@drawable/im_checkbox"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/tue_act"
+            app:layout_constraintEnd_toStartOf="@+id/thu_act"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tue_act"
+            app:layout_constraintTop_toTopOf="@+id/tue_act" />
+
+        <CheckBox
+            android:id="@+id/thu_act"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:button="@drawable/im_checkbox"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/wed_act"
+            app:layout_constraintEnd_toStartOf="@+id/fri_act"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/wed_act"
+            app:layout_constraintTop_toTopOf="@+id/wed_act" />
+
+        <CheckBox
+            android:id="@+id/fri_act"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:button="@drawable/im_checkbox"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/thu_act"
+            app:layout_constraintEnd_toStartOf="@+id/sat_act"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/thu_act"
+            app:layout_constraintTop_toTopOf="@+id/thu_act" />
+
+        <CheckBox
+            android:id="@+id/sat_act"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:layout_marginEnd="20dp"
+            android:button="@drawable/im_checkbox"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/fri_act"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/fri_act"
+            app:layout_constraintTop_toTopOf="@+id/fri_act" />
+
+        <CheckBox
+            android:id="@+id/tue_act"
+            android:layout_width="26dp"
+            android:layout_height="33dp"
+            android:button="@drawable/im_checkbox"
+            android:scaleX="1.5"
+            android:scaleY="2"
+            app:layout_constraintBottom_toBottomOf="@+id/mon_act"
+            app:layout_constraintEnd_toStartOf="@+id/wed_act"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mon_act"
+            app:layout_constraintTop_toTopOf="@+id/mon_act" />
+
+        <Button
+            android:id="@+id/act_sub"
+            android:layout_width="119dp"
+            android:layout_height="68dp"
+            android:text="Добавить"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="45dp"
+            android:layout_height="44dp"
+            android:background="@drawable/group"
+            app:layout_constraintBottom_toBottomOf="@+id/finish_til"
+            app:layout_constraintEnd_toEndOf="@+id/start_til"
+            app:layout_constraintTop_toTopOf="@+id/finish_til" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="339dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wed_act">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:text="Утром"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/text_color" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:text="В обед"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/text_color" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_selector"
+                    android:button="@android:color/transparent"
+                    android:elevation="4dp"
+                    android:text="Вечером"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/text_color" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Вс"
+            android:textColor="#004D40"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/sun_act"
+            app:layout_constraintStart_toStartOf="@+id/sun_act" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_slab"
+            android:text="Пн"
+            android:textColor="#33691E"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/mon_act"
+            app:layout_constraintStart_toStartOf="@+id/mon_act" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
